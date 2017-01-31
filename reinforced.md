@@ -1,7 +1,7 @@
 ##### RL Course by David Silver - Lecture 1: Introduction to Reinforcement Learning
 [video](https://www.youtube.com/watch?v=2pWv7GOvuf0)
 
-reward hypothesis: maximisation of expected accumulative reward
+**reward** hypothesis: maximisation of expected accumulative reward
 
 sequential decision making: select actions to maximise total future reward
 
@@ -13,11 +13,14 @@ At each step, the (learning) agent
 2. receive observation
 3. receive scalar reward
 
-The history is the sequence of observations, actions, rewards
+The **history** is the sequence of observations, actions, rewards
 
 **State** is the information used to determine what happens next.
  
- 
+1. environment state
+ * haha
+ * world
+2. you know
 
 
 
