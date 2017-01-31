@@ -54,6 +54,6 @@ Reinforcement Learning
 Planning
  * model of the env is known, the agent compute and improves
  
- control problem is different prediction problem
+control problem is different prediction problem
  
  
