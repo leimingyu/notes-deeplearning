@@ -28,7 +28,10 @@ full observability: agent directly observed env state, markov decision process (
 
 partial observability: agent indirectly observes env
  * texus hold'em
- * agent state not equal env state
+ * agent state 
+ $$
+ \neq
+ $$ env state
  * partially observable markov decision process (POMDP)
  
 **policy** : the agent's behavior
