@@ -28,7 +28,7 @@ full observability: agent directly observed env state, markov decision process (
 
 partial observability: agent indirectly observes env
  * texus hold'em
- * agent state [math]\neq[/math] env state
+ * agent state $\neq$ env state
   
 
 
