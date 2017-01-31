@@ -13,14 +13,24 @@ At each step, the (learning) agent
 2. receive observation
 3. receive scalar reward
 
-The **history** is the sequence of observations, actions, rewards
+The **history** is the sequence of observations, actions, rewards (markov state)
 
 **State** is the information used to determine what happens next.
  
-1. environment state
- * haha
- * world
-2. you know
+1. environment state: the env 's private representation (markov state)
+ * not visible to the agent
+ * contain irrelevant information
+2. agent state: the agent's internal representation
+3. information state (markov state): contains all the useful information from the history
+ * the future is independent of the past given the present
+
+full observability: agent directly observed env state, markov decision process (MDP)
+
+partial observability: agent indirectly observes env
+ * texus hold'em
+ * agent state [math]\neq[/math] env state
+  
+
 
 
 
