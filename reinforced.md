@@ -15,8 +15,9 @@ At each step, the (learning) agent
 
 The history is the sequence of observations, actions, rewards
 
-
-
+**State** is the information used to determine what happens next.
+ 
+ 
 
 
 
