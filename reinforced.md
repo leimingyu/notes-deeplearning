@@ -47,6 +47,13 @@ Actor Critic (value + policy) agent
 
 Reinforcement Learning
  * the env is initially unknown, the agent inteacts and improves the policy
+ * like trial-and-error learning
+ * exploration: find more information about the information
+ * exploitation:  from known info to maximize reward
  
 Planning
  * model of the env is known, the agent compute and improves
+ 
+ control problem is different prediction problem
+ 
+ 
