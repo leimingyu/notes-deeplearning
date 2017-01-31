@@ -28,10 +28,24 @@ full observability: agent directly observed env state, markov decision process (
 
 partial observability: agent indirectly observes env
  * texus hold'em
- * agent state \$\$\neq\$\$ env state
-  
+ * agent state not equal env state
+ * partially observable markov decision process (POMDP)
+ 
+**policy** : the agent's behavior
+* deterministric
+* stochastic 
 
+** value function **: the prediction of future reward
+* evaluate the goodness/badness of states
 
+**model** predicts the evn next move
+* transitions: predict the next state
+* rewards: next (immediate) reward
 
+Value-based / Policy-based agents
+Actor Critic (value + policy) agent
 
-
+Reinforcement Learning
+ * the env is initially unknown, the agent inteacts and improves the policy
+Planning
+ * model of the env is known, the agent compute and improves
