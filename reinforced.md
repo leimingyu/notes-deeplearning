@@ -47,5 +47,6 @@ Actor Critic (value + policy) agent
 
 Reinforcement Learning
  * the env is initially unknown, the agent inteacts and improves the policy
+ 
 Planning
  * model of the env is known, the agent compute and improves
