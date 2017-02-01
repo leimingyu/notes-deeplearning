@@ -8,10 +8,10 @@ weights = np.random.normal(scale=1/n_features**-.5, size=n_features)
 ```
 
 ## backpropgation
-<img src="Figs/backprop1.png" height="330">
-<img src="Figs/backprop2.png" height="330">
+<img src="Figs/backprop1.png" height="200">
+<img src="Figs/backprop2.png" height="200">
 
-<img src="Figs/backprop-algo.png" height="330">
+<img src="Figs/backprop-algo.png" height="500">
 
 
 ## References
