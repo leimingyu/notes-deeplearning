@@ -11,6 +11,8 @@ weights = np.random.normal(scale=1/n_features**-.5, size=n_features)
 <img src="Figs/backprop1.png" height="330">
 <img src="Figs/backprop2.png" height="330">
 
+<img src="Figs/backprop-algo.png" height="330">
+
 
 ## References
 * udacity deep learning 101
