@@ -7,7 +7,9 @@ This keeps the input to the sigmoid low for increasing numbers of input units.
 weights = np.random.normal(scale=1/n_features**-.5, size=n_features)
 ```
 
-
+## backpropgation
+![](Figs/backprop1.png)
+![](Figs/backprop2.png)
 
 
 ## References
