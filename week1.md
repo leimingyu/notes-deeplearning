@@ -1,5 +1,5 @@
 ## gradient descent
-![](Figs/gradient_pseudo.png){:height="36px" width="36px"}
+![](Figs/gradient_pseudo.png){:.some-css-class width="64"}
 
 A good value for the scale is $1/\sqrt{n}$ where n is the number of input units. 
 This keeps the input to the sigmoid low for increasing numbers of input units.
