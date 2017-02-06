@@ -3,7 +3,7 @@ The strategy here is to find hyperparameters such that the error on the training
 
 
 
-### Learning resources:
+## Learning resources:
 * https://jalammar.github.io/visual-interactive-guide-basics-neural-networks/
 * https://www.oreilly.com/learning/hello-tensorflow
 * https://www.tensorflow.org/tutorials/mnist/beginners/
