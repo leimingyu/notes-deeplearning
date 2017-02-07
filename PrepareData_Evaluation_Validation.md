@@ -14,4 +14,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 ## accuracy
 <img src="Figs/accuracy01.png" height="250">
 
-## mean absolute error
+## mean absolute error 
+
+## R2 score
+evaluate the linear regression model with the average simplistic model
+<img src="Figs/R2score01.png" height="200">
+<img src="Figs/R2score02.png" height="200">
