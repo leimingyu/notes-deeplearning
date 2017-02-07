@@ -29,3 +29,9 @@ evaluate the linear regression model with the average simplistic model
 ## model complexity graph
 <img src="Figs/model_complex01.png" height="200">
 <img src="Figs/model_complex02.png" height="200">
+
+
+## cross validation
+use KFold in sklearn
+
+http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html
