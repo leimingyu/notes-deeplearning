@@ -10,7 +10,7 @@ have more weight/frequency than the meaningful words, such as nice, great, disap
 Instead of using the frequency, use the word ( exist: 1, not-exist: 0) as the input of the neural nets. Let the NN figure out the weights of each word in your document.
 
 ## speedup
-* avoid adding 0 to the weights
+* avoid adding 0 to the weights  ( hint: find the index of 1)
 * avoid multiplying 1 to the input data
 
 ##
