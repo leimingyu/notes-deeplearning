@@ -13,4 +13,6 @@ Instead of using the frequency, use the word ( exist: 1, not-exist: 0) as the in
 * avoid adding 0 to the weights  ( hint: find the index of 1)
 * avoid multiplying 1 to the input data
 
-##
+## nn vs lexicon
+Sarcasm can be difficult for lexicon to interpret. Neural nets can understand the subtlety.
+
