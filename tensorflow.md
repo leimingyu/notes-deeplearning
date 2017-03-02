@@ -1,6 +1,10 @@
 # Tensorflow example
 
-### example 1:  wx + b = y, y_ = h(y), y = y_ * w + b
+### example 1:  two layers
+* wx + b = y
+* y_ = h(y)
+* y = y_ * w + b
+
 ```python
 import tensorflow as tf
 
