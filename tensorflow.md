@@ -44,7 +44,7 @@ with tf.Session() as sess:
     print(sess.run(output))
 ```
 
-### Save model 
+### example 2 : Save model 
 ```python
 # Remove previous Tensors and Operations
 tf.reset_default_graph()
@@ -133,7 +133,7 @@ with tf.Session() as sess:
 print('Test Accuracy: {}'.format(test_accuracy))
 ```
 
-### Dropout
+### Example 3:  Dropout
 
 There's nothing wrong with the syntax, however the test accuracy is extremely low.
 
@@ -166,3 +166,45 @@ with tf.Session() as sess:
         keep_prob: 0.5})
 ```
 You should only drop units while training the model. During validation or testing, you should keep all of the units to maximize accuracy.
+
+
+### example 4:  implement dropout
+```python
+# Solution is available in the other "solution.py" tab
+import tensorflow as tf
+
+hidden_layer_weights = [
+    [0.1, 0.2, 0.4],
+    [0.4, 0.6, 0.6],
+    [0.5, 0.9, 0.1],
+    [0.8, 0.2, 0.8]]
+out_weights = [
+    [0.1, 0.6],
+    [0.2, 0.1],
+    [0.7, 0.9]]
+
+# Weights and biases
+weights = [
+    tf.Variable(hidden_layer_weights),
+    tf.Variable(out_weights)]
+biases = [
+    tf.Variable(tf.zeros(3)),
+    tf.Variable(tf.zeros(2))]
+
+# Input
+features = tf.Variable([[0.0, 2.0, 3.0, 4.0], [0.1, 0.2, 0.3, 0.4], [11.0, 12.0, 13.0, 14.0]])
+
+# TODO: Create Model with Dropout
+keep_prob = tf.placeholder(tf.float32)
+hidden_layer = tf.add(tf.matmul(features, weights[0]), biases[0])
+hidden_layer = tf.nn.relu(hidden_layer)
+hidden_layer = tf.nn.dropout(hidden_layer, keep_prob)
+
+logits = tf.add(tf.matmul(hidden_layer, weights[1]), biases[1])
+
+
+# TODO: Print logits from a session
+with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+    print(sess.run(logits, feed_dict={keep_prob: 0.5}))
+```
