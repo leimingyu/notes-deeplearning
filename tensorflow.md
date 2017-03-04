@@ -132,3 +132,37 @@ with tf.Session() as sess:
 
 print('Test Accuracy: {}'.format(test_accuracy))
 ```
+
+### Dropout
+
+There's nothing wrong with the syntax, however the test accuracy is extremely low.
+
+```python
+keep_prob = tf.placeholder(tf.float32) # probability to keep units
+
+hidden_layer = tf.add(tf.matmul(features, weights[0]), biases[0])
+hidden_layer = tf.nn.relu(hidden_layer)
+hidden_layer = tf.nn.dropout(hidden_layer, keep_prob)
+
+logits = tf.add(tf.matmul(hidden_layer, weights[1]), biases[1])
+
+...
+
+with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+
+    for epoch_i in range(epochs):
+        for batch_i in range(batches):
+            ....
+
+            sess.run(optimizer, feed_dict={
+                features: batch_features,
+                labels: batch_labels,
+                keep_prob: 0.5})
+
+    validation_accuracy = sess.run(accuracy, feed_dict={
+        features: test_features,
+        labels: test_labels,
+        keep_prob: 0.5})
+```
+You should only drop units while training the model. During validation or testing, you should keep all of the units to maximize accuracy.
