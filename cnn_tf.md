@@ -188,3 +188,10 @@ with tf.Session() as sess:
     print('Testing Accuracy: {}'.format(test_acc))
 ```
 
+
+## Quiz
+```
+Finish off each TODO in the conv2d function.
+Setup the strides, padding and filter weight/bias (F_w and F_b) such that the output shape is (1, 2, 2, 3). 
+Note that all of these except strides should be TensorFlow variables.
+```
