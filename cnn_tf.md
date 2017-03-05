@@ -236,3 +236,9 @@ def conv2d(input):
 out = conv2d(X)
 ```
 
+to compute the output dim for conv kernels
+```
+out_height = ceil(float(in_height - filter_height + 1) / float(strides[1]))
+out_width  = ceil(float(in_width - filter_width + 1) / float(strides[2]))
+```
+
