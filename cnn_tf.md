@@ -50,4 +50,8 @@ conv_layer = tf.nn.max_pool(
 The contribution of max-pooling: 
 * Decrease the size of the output and prevent overfitting. Reducing overfitting is a consequence of the reducing the output size, which in turn, reduces the number of parameters in future layers.
 
+Recently, pooling layers have fallen out of favor. Some reasons are:
 
+* Recent datasets are so big and complex we're more concerned about underfitting.
+* Dropout is a much better regularizer.
+* Pooling results in a loss of information. Think about the max pooling operation as an example. We only keep the largest of n numbers, thereby disregarding n-1 numbers completely.
