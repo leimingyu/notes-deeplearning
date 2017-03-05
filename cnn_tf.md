@@ -64,3 +64,7 @@ strides = [1, 2, 2, 1]
 padding = 'VALID'
 pool = tf.nn.max_pool(input, filter_shape, strides, padding)
 ```
+
+## Inception Module
+average pooling ->  1x1 conv (matrix mul) (to improve convnet)
+<image src='Figs/inception.png'>
