@@ -10,7 +10,7 @@ same vs valid padding
  If we want a cat that’s in the top left patch to be classified in the same way as a cat in the bottom right patch, 
  we need the weights and biases corresponding to those patches to be the same, so that they are classified the same way.
  
-### More
+### Output Shape
 ```
 H = height, W = width, D = depth
 
@@ -37,3 +37,23 @@ The output shape of conv will be [1, 13, 13, 20].
 It's 4D to account for batch size, but more importantly, it's not [1, 14, 14, 20]. 
 This is because the padding algorithm TensorFlow uses is not exactly the same as the one above.
 https://www.tensorflow.org/api_guides/python/nn#Convolution
+
+
+### parameters number
+```
+Setup
+H = height, W = width, D = depth
+
+We have an input of shape 32x32x3 (HxWxD)
+20 filters of shape 8x8x3 (HxWxD)
+A stride of 2 for both the height and width (S)
+Zero padding of size 1 (P)
+Output Layer
+14x14x20 (HxWxD)
+```
+Without parameter sharing, each neuron in the output layer must connect to each neuron in the filter. 
+In addition, each neuron in the output layer must also connect to a single bias neuron.
+```
+(8 * 8 * 3 + 1) * (14 * 14 * 20) = 756560
+```
+
