@@ -3,13 +3,14 @@
 same vs valid padding
 
 
-### weights sharing
+### parameters sharing
  We would like our CNNs to also possess this ability known as translation invariance. 
  Recognize objects regardless of their location in the image.
  
  If we want a cat that’s in the top left patch to be classified in the same way as a cat in the bottom right patch, 
  we need the weights and biases corresponding to those patches to be the same, so that they are classified the same way.
  
+### More
 ```
 H = height, W = width, D = depth
 
