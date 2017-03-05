@@ -1,5 +1,8 @@
 ### strides, depth and padding
 
+same vs valid padding
+
+
 ### weights sharing
  We would like our CNNs to also possess this ability known as translation invariance. 
  Recognize objects regardless of their location in the image.
@@ -29,3 +32,7 @@ strides = [1, 2, 2, 1] # (batch, height, width, depth)
 padding = 'VALID'
 conv = tf.nn.conv2d(input, filter_weights, strides, padding) + filter_bias
 ```
+The output shape of conv will be [1, 13, 13, 20]. 
+It's 4D to account for batch size, but more importantly, it's not [1, 14, 14, 20]. 
+This is because the padding algorithm TensorFlow uses is not exactly the same as the one above.
+https://www.tensorflow.org/api_guides/python/nn#Convolution
