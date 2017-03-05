@@ -59,9 +59,17 @@ In addition, each neuron in the output layer must also connect to a single bias 
 ```
 
 **with parameters sharing**
+
 With parameter sharing, each neuron in an output channel shares its weights with every other neuron in that channel. 
 So the number of parameters is equal to the number of neurons in the filter, plus a bias neuron, 
 all multiplied by the number of channels in the output layer.
 ```
 (8 * 8 * 3 + 1) * 20 = 3840 + 20 = 3860
 ```
+
+### visualizing cnn
+* https://www.youtube.com/watch?v=ghEmQSxT6tw
+* http://www.matthewzeiler.com/pubs/arxive2013/eccv2014.pdf
+
+
+
