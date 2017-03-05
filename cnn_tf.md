@@ -29,3 +29,6 @@ conv_layer = tf.nn.bias_add(conv_layer, bias)
 # Apply activation function
 conv_layer = tf.nn.relu(conv_layer)
 ```
+
+## max pooling
+<image src='Figs/max-pooling.png'>
