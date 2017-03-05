@@ -40,6 +40,7 @@ https://www.tensorflow.org/api_guides/python/nn#Convolution
 
 
 ### parameters number
+**without parameters sharing**
 ```
 Setup
 H = height, W = width, D = depth
@@ -57,3 +58,10 @@ In addition, each neuron in the output layer must also connect to a single bias 
 (8 * 8 * 3 + 1) * (14 * 14 * 20) = 756560
 ```
 
+**with parameters sharing**
+With parameter sharing, each neuron in an output channel shares its weights with every other neuron in that channel. 
+So the number of parameters is equal to the number of neurons in the filter, plus a bias neuron, 
+all multiplied by the number of channels in the output layer.
+```
+(8 * 8 * 3 + 1) * 20 = 3840 + 20 = 3860
+```
