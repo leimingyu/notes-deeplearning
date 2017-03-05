@@ -55,3 +55,12 @@ Recently, pooling layers have fallen out of favor. Some reasons are:
 * Recent datasets are so big and complex we're more concerned about underfitting.
 * Dropout is a much better regularizer.
 * Pooling results in a loss of information. Think about the max pooling operation as an example. We only keep the largest of n numbers, thereby disregarding n-1 numbers completely.
+
+maxpooling from 4x4x5 to 2x2 with stride 2
+```python
+input = tf.placeholder(tf.float32, (None, 4, 4, 5))
+filter_shape = [1, 2, 2, 1]
+strides = [1, 2, 2, 1]
+padding = 'VALID'
+pool = tf.nn.max_pool(input, filter_shape, strides, padding)
+```
