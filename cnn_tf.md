@@ -48,6 +48,6 @@ conv_layer = tf.nn.max_pool(
 ```
 
 The contribution of max-pooling: 
-*Decrease the size of the output and prevent overfitting. Reducing overfitting is a consequence of the reducing the output size, which in turn, reduces the number of parameters in future layers.
+* Decrease the size of the output and prevent overfitting. Reducing overfitting is a consequence of the reducing the output size, which in turn, reduces the number of parameters in future layers.
 
 
