@@ -67,4 +67,4 @@ pool = tf.nn.max_pool(input, filter_shape, strides, padding)
 
 ## Inception Module
 average pooling ->  1x1 conv (matrix mul) (to improve convnet)
-<image src='Figs/inception.png'>
+<image src='Figs/inception.png' height=300px>
