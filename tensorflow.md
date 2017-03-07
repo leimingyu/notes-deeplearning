@@ -1,6 +1,17 @@
 # Tensorflow example
 https://github.com/aymericdamien/TensorFlow-Examples
 
+### use name parameter when creating a variable/placeholder in Tensorflow
+When you want to save or restore your variables
+
+http://stackoverflow.com/questions/33648167/why-do-we-use-name-parameter-when-creating-a-variable-in-tensorflow
+```python
+tf.placeholder(tf.float32, 
+               (None, image_shape[0], image_shape[1], image_shape[2]), 
+                name="x")
+```
+
+
 ### example 1:  two layers
 * wx + b = y
 * y_ = h(y)
