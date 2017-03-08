@@ -1,3 +1,7 @@
+## RNN
+<image src="Figs/rnn/01_rnn.png">
+
+
 ## LSTM
 http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 
