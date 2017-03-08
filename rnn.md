@@ -5,7 +5,7 @@
 <image src="Figs/rnn/04_rnn.png" height="250px">
 <image src="Figs/rnn/05_rnn.png" height="250px">
 <image src="Figs/rnn/06_rnn_cell.png" height="250px">
-<image src="Figs/rnn/01_lstm_cell.png" height="250px">
+<image src="Figs/rnn/07_lstm_cell.png" height="250px">
 
 
 
