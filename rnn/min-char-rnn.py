@@ -11,6 +11,8 @@ data_size, vocab_size = len(data), len(chars)
 print 'data has %d characters, %d unique.' % (data_size, vocab_size)
 char_to_ix = { ch:i for i,ch in enumerate(chars) }
 ix_to_char = { i:ch for i,ch in enumerate(chars) }
+### this is code deved by karpathy
+
 
 # hyperparameters
 hidden_size = 100 # size of hidden layer of neurons
@@ -33,15 +35,29 @@ def lossFun(inputs, targets, hprev):
   xs, hs, ys, ps = {}, {}, {}, {}
   hs[-1] = np.copy(hprev)
   loss = 0
+  
+  # ----------------------------
   # forward pass
+  #-----------------------------
   for t in xrange(len(inputs)):
+    # set up input
     xs[t] = np.zeros((vocab_size,1)) # encode in 1-of-k representation
     xs[t][inputs[t]] = 1
+    
+    # recurrence formular : hidden state
     hs[t] = np.tanh(np.dot(Wxh, xs[t]) + np.dot(Whh, hs[t-1]) + bh) # hidden state
+    
     ys[t] = np.dot(Why, hs[t]) + by # unnormalized log probabilities for next chars
+    
+    # apply softmax func
     ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t])) # probabilities for next chars
+    
+    # entrophy: p x your correct answer
     loss += -np.log(ps[t][targets[t],0]) # softmax (cross-entropy loss)
+    
+  # ----------------
   # backward pass: compute gradients going backwards
+  # ----------------
   dWxh, dWhh, dWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)
   dbh, dby = np.zeros_like(bh), np.zeros_like(by)
   dhnext = np.zeros_like(hs[0])
@@ -88,7 +104,7 @@ while True:
     hprev = np.zeros((hidden_size,1)) # reset RNN memory
     p = 0 # go from start of data
   inputs = [char_to_ix[ch] for ch in data[p:p+seq_length]]
-  targets = [char_to_ix[ch] for ch in data[p+1:p+seq_length+1]]
+  targets = [char_to_ix[ch] for ch in data[p+1:p+seq_length+1]]  # move 1 char forward
 
   # sample from the model now and then
   if n % 100 == 0:
