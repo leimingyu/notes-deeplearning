@@ -1,5 +1,5 @@
 ## RNN
-<image src="Figs/rnn/01_rnn.png" hight=300>
+<image src="Figs/rnn/01_rnn.png" hight=150px>
 
 
 ## LSTM
