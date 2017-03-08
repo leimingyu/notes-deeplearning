@@ -1,3 +1,9 @@
+## apply dropout
+The conv_net should have dropout applied to at least one layer.
+
+* http://cs231n.github.io/neural-networks-2/#reg
+* http://cs231n.github.io/convolutional-networks/#architectures
+
 ## conv layer
 ```python
 # Output depth
