@@ -26,6 +26,6 @@ If RNNs could do this, they’d be extremely useful. But can they? It depends.
 It’s entirely possible for the gap between the relevant information and the point where it is needed to become very large.
 
 ## Readings
-[![CS231n Lecture 10 - Recurrent Neural Networks, Image Captioning, LSTM]()](https://www.youtube.com/watch?v=iX5V1WpxxkY)
+[![CS231n Lecture 10 - Recurrent Neural Networks, Image Captioning, LSTM](https://img.youtube.com/vi/v=iX5V1WpxxkY/0.jpg)](https://www.youtube.com/watch?v=iX5V1WpxxkY)
 
 
