@@ -1,0 +1,12 @@
+<image src="rnn_lstm/01_mini-char-rnn.png" height="250px">
+<image src="rnn_lstm/02_image_captioning.png" height="250px">
+<image src="rnn_lstm/03.png" height="250px">
+<image src="rnn_lstm/04_plugin.png" height="250px">
+<image src="rnn_lstm/05_vgg_rnn.png" height="250px">
+<image src="rnn_lstm/06_coco.png" height="250px">
+<image src="rnn_lstm/07.png" height="250px">
+<image src="rnn_lstm/08_lstm.png" height="250px">
+<image src="rnn_lstm/09.png" height="250px">
+<image src="rnn_lstm/10.png" height="250px">
+<image src="rnn_lstm/11.png" height="250px">
+<image src="rnn_lstm/12_resnets.png" height="250px">
