@@ -1,6 +1,6 @@
 # Tensorflow example
-https://github.com/aymericdamien/TensorFlow-Examples
-
+* https://github.com/aymericdamien/TensorFlow-Examples
+* data preparation https://github.com/udacity/machine-learning/blob/master/projects/intro-to-tensorflow/intro_to_tensorflow.ipynb
 ### use name parameter when creating a variable/placeholder in Tensorflow
 When you want to save or restore your variables
 
